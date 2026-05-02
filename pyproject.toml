@@ -1,6 +1,8 @@
 [tool.poetry]
 name = "architectural-grc"
 version = "0.1.0"
+description = "Automated Software Governance"
+authors = ["Larry Johnson"]
 
 [tool.poetry.dependencies]
 boto3 = "^1.14.27"
@@ -8,12 +10,14 @@ langchain = "^0.3.27"
 langchain-openai = "^0.3.30"
 langchain-community = "^0.3.30"
 pandas = "^2.2.3"
-python = "^3.11"
+python = "^3.12.7"
 requests = "^2.24.0"
 
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+pluggy = "^1.5.0"
+pytest-cov = "^5.0.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
