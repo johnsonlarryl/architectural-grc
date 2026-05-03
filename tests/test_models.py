@@ -21,4 +21,4 @@ def test_incident_report_model():
     report = generate_incident_report()
 
     assert report
-    assert elapsed <= report_generation_expect_time, f"Execution took too long: {elapsed:.4f}s > 5s"
+    assert elapsed <= report_generation_expect_time, f"Execution took too long: {elapsed:.4f}s > {report_generation_expect_time}s"
