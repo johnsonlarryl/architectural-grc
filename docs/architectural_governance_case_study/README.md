@@ -48,5 +48,5 @@ The test ensures that:
 ## Usage
 
 ```
-poetry run pytest -k test_incident_report_model
+poetry run pytest -k test_incident_report_model -s --log-cli-level=WARNING
 ```
